@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/login_before"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="大世界"
+                    android:textColor="#3DC2D5"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="手机号"
+                        android:textColor="#3DC2D5"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+                    <com.qiang.cblog.ui.LineEditText
+                        android:id="@+id/login_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        android:paddingBottom="2dp"
+                        android:text=""
+                        android:textColor="#718398"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="密    码"
+                        android:textColor="#3DC2D5"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+                    <com.qiang.cblog.ui.LineEditText
+                        android:id="@+id/login_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        android:inputType="textPassword"
+                        android:paddingBottom="0.1dp"
+                        android:text=""
+                        android:textColor="#718398"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/login_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:background="#3DC2D5"
+                    android:gravity="center"
+                    android:text="登录"
+                    android:textColor="#B1E6EE"
+                    android:textSize="12sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/login_after"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cblog_notice" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="推送通知"
+                android:textColor="#1D2126" />
+
+            <com.qiang.cblog.ui.SlideSwitch
+                style="@style/Switch"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cblog_night" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="夜间模式"
+                android:textColor="#1D2126" />
+
+            <com.qiang.cblog.ui.SlideSwitch
+                style="@style/Switch"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="推送通知"
+                android:textColor="#1D2126" />
+
+            <com.qiang.cblog.ui.SlideSwitch
+                style="@style/Switch"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cblog_logo_1_g" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="关于大世界"
+                android:textColor="#1D2126" />
+
+            <com.qiang.cblog.ui.SlideSwitch
+                style="@style/Switch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="12dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大世界 "
+                android:textColor="#ABB6C3"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.0"
+                android:textColor="#ABB6C3"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

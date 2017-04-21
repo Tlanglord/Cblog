@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qiang.cblog.MainActivity" >
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+    </TextView>
+
+</LinearLayout>

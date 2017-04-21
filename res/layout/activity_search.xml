@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context="com.qiang.cblog.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cblog_search_content_shape"
+            android:hint="搜索文章"
+            android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ABB6C3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:textColor="#3DC2D5"
+            android:textSize="14sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F1F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索推荐"
+            android:textColor="#9BA7B6"
+            android:textSize="16sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cblog_search_rec_shape"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textColor="#718398"
+            android:textSize="12sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

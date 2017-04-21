@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/webview_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/cblog_back_1" />
+
+        <TextView
+            android:id="@+id/webview_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cblog_collect_g" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#c2c2c2" />
+
+    <WebView
+        android:id="@+id/web_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8f8f8" />
+
+</LinearLayout>

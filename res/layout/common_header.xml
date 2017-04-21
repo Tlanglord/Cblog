@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp" >
+
+    <TextView
+        android:id="@+id/cblog_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cblog_back_1" />
+
+    <TextView
+        android:id="@+id/cblog_something1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="注册"
+        android:textColor="#1C2025"
+        android:textSize="14sp"
+        android:typeface="serif"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cblog_something2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="注册"
+        android:textColor="#1C2025"
+        android:textSize="14sp"
+        android:typeface="serif"
+        android:visibility="gone" />
+
+</FrameLayout>
